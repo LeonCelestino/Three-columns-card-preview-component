@@ -69,10 +69,15 @@
     border-radius: 1.5rem;
     align-self: flex-start;
     background: var(--very-light-gray);
+    border: 0.125rem solid var(--very-light-gray);
     color: var(--dark-cyan);
     text-decoration: none;
 }
 
+.card-button:hover {
+    background: 0;
+    color: var(--very-light-gray);
+}
 .column img {
     display: block;
     max-width: max-content;
@@ -95,6 +100,12 @@ p, a {
     font-family: 'Lexend Deca', sans-serif;
 }
 
+
+@media (max-width: 42rem) {
+    .column {
+        gap: 2rem;
+    }
+}
 
 @media (max-width: 20rem) {
     .card {
